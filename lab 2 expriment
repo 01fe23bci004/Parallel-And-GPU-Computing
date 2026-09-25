@@ -1,0 +1,28 @@
+# OpenMP Lab Experiment
+
+## Objective
+
+To implement and execute a C program using **OpenMP** and understand how OpenMP supports parallel programming using multiple threads.
+
+## Description
+
+OpenMP is an API used for parallel programming in C, C++, and Fortran. It allows a program to execute portions of code concurrently using multiple threads.
+
+In this experiment, an OpenMP C program (`openmp.c`) was created and compiled using GCC with the `-fopenmp` option. The program uses OpenMP functions such as:
+
+- `omp_get_wtime()` – used to measure execution time.
+- `omp_get_max_threads()` – used to determine the maximum number of threads available.
+
+The program was compiled using:
+
+```bash
+gcc -O2 -fopenmp openmp.c -o open
+
+./open
+
+The OpenMP program was successfully compiled using GCC with OpenMP support and the executable was generated successfully.
+The execution command ./open was also successfully started. The experiment demonstrates the use of OpenMP functions for parallel execution, thread information, and execution-time measurement.
+Result: The OpenMP program was successfully compiled and executed.
+
+
+Thus, the OpenMP program was successfully implemented and executed, demonstrating the basic use of OpenMP for parallel programming in C.
