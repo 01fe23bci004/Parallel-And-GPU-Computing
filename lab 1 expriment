@@ -1,0 +1,39 @@
+# Lab 1 – Matrix Multiplication using Sequential C and OpenMP
+
+## Objective
+
+To implement matrix multiplication using sequential programming and OpenMP parallel programming, and compare their execution performance.
+
+## Description
+
+In this lab, matrix multiplication is performed on two square matrices of size 4000 × 4000.
+
+The sequential version performs the matrix multiplication using a normal nested-loop approach.
+
+The OpenMP version uses parallel processing to distribute the matrix multiplication work among multiple CPU threads.
+
+The execution time and correctness of the matrix multiplication are verified.
+
+## Matrix Size
+
+- Matrix A: 4000 × 4000
+- Matrix B: 4000 × 4000
+- Result Matrix C: 4000 × 4000
+
+## Sequential Execution Result
+
+```text
+Matrix Size = 4000 x 4000
+Execution Time = 373.759368 seconds
+Verification C[0][0] = 4000.00
+
+gcc -O2 -fopenmp openmp.c -o open
+
+The sequential matrix multiplication successfully completed for a
+4000 × 4000 matrix.
+The execution time recorded was:
+373.759368 seconds
+The verification value:
+C[0][0] = 4000.00
+confirms the correctness of the matrix multiplication.
+The OpenMP implementation is used to parallelize the computation and reduce execution time by utilizing multiple CPU threads.
